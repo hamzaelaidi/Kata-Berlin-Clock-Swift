@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F07E6242331B6C5005B9698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F07E6232331B6C5005B9698 /* AppDelegate.swift */; };
+		2F07E6262331B6C5005B9698 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F07E6252331B6C5005B9698 /* ViewController.swift */; };
+		2F07E6292331B6C5005B9698 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F07E6272331B6C5005B9698 /* Main.storyboard */; };
+		2F07E62B2331B6C6005B9698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F07E62A2331B6C6005B9698 /* Assets.xcassets */; };
+		2F07E62E2331B6C6005B9698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F07E62C2331B6C6005B9698 /* LaunchScreen.storyboard */; };
+		2F07E6392331B6C7005B9698 /* Kata_BerlinClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F07E6382331B6C7005B9698 /* Kata_BerlinClockTests.swift */; };
+		2F07E6442331B713005B9698 /* BerlinClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F07E6432331B713005B9698 /* BerlinClock.swift */; };
+		2F07E6462331B72D005B9698 /* HourConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F07E6452331B72D005B9698 /* HourConverter.swift */; };
+		2F07E6482331B73A005B9698 /* MinuteConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F07E6472331B73A005B9698 /* MinuteConverter.swift */; };
+		2F07E64A2331B743005B9698 /* SecondConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F07E6492331B743005B9698 /* SecondConverter.swift */; };
+		2F07E64C2331B794005B9698 /* TimeIsOn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F07E64B2331B794005B9698 /* TimeIsOn.swift */; };
+		2F07E64E2331B831005B9698 /* HourConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F07E64D2331B831005B9698 /* HourConverterTests.swift */; };
+		2F07E6502331B87B005B9698 /* MinuteConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F07E64F2331B87B005B9698 /* MinuteConverterTests.swift */; };
+		2F07E6522331B889005B9698 /* SecondConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F07E6512331B889005B9698 /* SecondConverterTests.swift */; };
+		71B16A796547F81C5A8BD769 /* Pods_Kata_BerlinClock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E635C2FFB146B5461636FC /* Pods_Kata_BerlinClock.framework */; };
+		9406FBBDE74A78B262ADC3B1 /* Pods_Kata_BerlinClockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B9A5BD86A1D7A6916B0FFA /* Pods_Kata_BerlinClockTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F07E6352331B6C7005B9698 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F07E6182331B6C5005B9698 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F07E61F2331B6C5005B9698;
+			remoteInfo = "Kata-BerlinClock";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F07E6202331B6C5005B9698 /* Kata-BerlinClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kata-BerlinClock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F07E6232331B6C5005B9698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F07E6252331B6C5005B9698 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F07E6282331B6C5005B9698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F07E62A2331B6C6005B9698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F07E62D2331B6C6005B9698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F07E62F2331B6C6005B9698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F07E6342331B6C7005B9698 /* Kata-BerlinClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kata-BerlinClockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F07E6382331B6C7005B9698 /* Kata_BerlinClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kata_BerlinClockTests.swift; sourceTree = "<group>"; };
+		2F07E63A2331B6C7005B9698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F07E6432331B713005B9698 /* BerlinClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BerlinClock.swift; sourceTree = "<group>"; };
+		2F07E6452331B72D005B9698 /* HourConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourConverter.swift; sourceTree = "<group>"; };
+		2F07E6472331B73A005B9698 /* MinuteConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteConverter.swift; sourceTree = "<group>"; };
+		2F07E6492331B743005B9698 /* SecondConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondConverter.swift; sourceTree = "<group>"; };
+		2F07E64B2331B794005B9698 /* TimeIsOn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIsOn.swift; sourceTree = "<group>"; };
+		2F07E64D2331B831005B9698 /* HourConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourConverterTests.swift; sourceTree = "<group>"; };
+		2F07E64F2331B87B005B9698 /* MinuteConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteConverterTests.swift; sourceTree = "<group>"; };
+		2F07E6512331B889005B9698 /* SecondConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondConverterTests.swift; sourceTree = "<group>"; };
+		3081E2DA797BEEE92182BF1C /* Pods-Kata-BerlinClockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kata-BerlinClockTests.debug.xcconfig"; path = "Target Support Files/Pods-Kata-BerlinClockTests/Pods-Kata-BerlinClockTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3397CBE6F86AB9E1BEFCC522 /* Pods-Kata-BerlinClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kata-BerlinClock.debug.xcconfig"; path = "Target Support Files/Pods-Kata-BerlinClock/Pods-Kata-BerlinClock.debug.xcconfig"; sourceTree = "<group>"; };
+		73B9A5BD86A1D7A6916B0FFA /* Pods_Kata_BerlinClockTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kata_BerlinClockTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CA4F7F4ADBB78C98E94D5E8 /* Pods-Kata-BerlinClockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kata-BerlinClockTests.release.xcconfig"; path = "Target Support Files/Pods-Kata-BerlinClockTests/Pods-Kata-BerlinClockTests.release.xcconfig"; sourceTree = "<group>"; };
+		85E635C2FFB146B5461636FC /* Pods_Kata_BerlinClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kata_BerlinClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7D6D4B668D81AE33EC365E /* Pods-Kata-BerlinClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kata-BerlinClock.release.xcconfig"; path = "Target Support Files/Pods-Kata-BerlinClock/Pods-Kata-BerlinClock.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F07E61D2331B6C5005B9698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71B16A796547F81C5A8BD769 /* Pods_Kata_BerlinClock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F07E6312331B6C7005B9698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9406FBBDE74A78B262ADC3B1 /* Pods_Kata_BerlinClockTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		109D86C0E74731EBD8F984D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3397CBE6F86AB9E1BEFCC522 /* Pods-Kata-BerlinClock.debug.xcconfig */,
+				CB7D6D4B668D81AE33EC365E /* Pods-Kata-BerlinClock.release.xcconfig */,
+				3081E2DA797BEEE92182BF1C /* Pods-Kata-BerlinClockTests.debug.xcconfig */,
+				7CA4F7F4ADBB78C98E94D5E8 /* Pods-Kata-BerlinClockTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2F07E6172331B6C5005B9698 = {
+			isa = PBXGroup;
+			children = (
+				2F07E6222331B6C5005B9698 /* Kata-BerlinClock */,
+				2F07E6372331B6C7005B9698 /* Kata-BerlinClockTests */,
+				2F07E6212331B6C5005B9698 /* Products */,
+				109D86C0E74731EBD8F984D3 /* Pods */,
+				BA2A1A91108CFF476A7556D8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2F07E6212331B6C5005B9698 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F07E6202331B6C5005B9698 /* Kata-BerlinClock.app */,
+				2F07E6342331B6C7005B9698 /* Kata-BerlinClockTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F07E6222331B6C5005B9698 /* Kata-BerlinClock */ = {
+			isa = PBXGroup;
+			children = (
+				2F07E6232331B6C5005B9698 /* AppDelegate.swift */,
+				2F07E6252331B6C5005B9698 /* ViewController.swift */,
+				2F07E6272331B6C5005B9698 /* Main.storyboard */,
+				2F07E62A2331B6C6005B9698 /* Assets.xcassets */,
+				2F07E62C2331B6C6005B9698 /* LaunchScreen.storyboard */,
+				2F07E62F2331B6C6005B9698 /* Info.plist */,
+				2F07E6432331B713005B9698 /* BerlinClock.swift */,
+				2F07E6452331B72D005B9698 /* HourConverter.swift */,
+				2F07E6472331B73A005B9698 /* MinuteConverter.swift */,
+				2F07E6492331B743005B9698 /* SecondConverter.swift */,
+				2F07E64B2331B794005B9698 /* TimeIsOn.swift */,
+			);
+			path = "Kata-BerlinClock";
+			sourceTree = "<group>";
+		};
+		2F07E6372331B6C7005B9698 /* Kata-BerlinClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				2F07E6382331B6C7005B9698 /* Kata_BerlinClockTests.swift */,
+				2F07E64D2331B831005B9698 /* HourConverterTests.swift */,
+				2F07E64F2331B87B005B9698 /* MinuteConverterTests.swift */,
+				2F07E6512331B889005B9698 /* SecondConverterTests.swift */,
+				2F07E63A2331B6C7005B9698 /* Info.plist */,
+			);
+			path = "Kata-BerlinClockTests";
+			sourceTree = "<group>";
+		};
+		BA2A1A91108CFF476A7556D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85E635C2FFB146B5461636FC /* Pods_Kata_BerlinClock.framework */,
+				73B9A5BD86A1D7A6916B0FFA /* Pods_Kata_BerlinClockTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F07E61F2331B6C5005B9698 /* Kata-BerlinClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F07E63D2331B6C7005B9698 /* Build configuration list for PBXNativeTarget "Kata-BerlinClock" */;
+			buildPhases = (
+				DD14790DD38D554C8EE5F92E /* [CP] Check Pods Manifest.lock */,
+				2F07E61C2331B6C5005B9698 /* Sources */,
+				2F07E61D2331B6C5005B9698 /* Frameworks */,
+				2F07E61E2331B6C5005B9698 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kata-BerlinClock";
+			productName = "Kata-BerlinClock";
+			productReference = 2F07E6202331B6C5005B9698 /* Kata-BerlinClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2F07E6332331B6C7005B9698 /* Kata-BerlinClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F07E6402331B6C7005B9698 /* Build configuration list for PBXNativeTarget "Kata-BerlinClockTests" */;
+			buildPhases = (
+				B079E31F0E7055725CC6E2CA /* [CP] Check Pods Manifest.lock */,
+				2F07E6302331B6C7005B9698 /* Sources */,
+				2F07E6312331B6C7005B9698 /* Frameworks */,
+				2F07E6322331B6C7005B9698 /* Resources */,
+				846A9E53BCE9515511B32AD1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F07E6362331B6C7005B9698 /* PBXTargetDependency */,
+			);
+			name = "Kata-BerlinClockTests";
+			productName = "Kata-BerlinClockTests";
+			productReference = 2F07E6342331B6C7005B9698 /* Kata-BerlinClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F07E6182331B6C5005B9698 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Hamza EL AIDI";
+				TargetAttributes = {
+					2F07E61F2331B6C5005B9698 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					2F07E6332331B6C7005B9698 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 2F07E61F2331B6C5005B9698;
+					};
+				};
+			};
+			buildConfigurationList = 2F07E61B2331B6C5005B9698 /* Build configuration list for PBXProject "Kata-BerlinClock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F07E6172331B6C5005B9698;
+			productRefGroup = 2F07E6212331B6C5005B9698 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F07E61F2331B6C5005B9698 /* Kata-BerlinClock */,
+				2F07E6332331B6C7005B9698 /* Kata-BerlinClockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F07E61E2331B6C5005B9698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F07E62E2331B6C6005B9698 /* LaunchScreen.storyboard in Resources */,
+				2F07E62B2331B6C6005B9698 /* Assets.xcassets in Resources */,
+				2F07E6292331B6C5005B9698 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F07E6322331B6C7005B9698 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		846A9E53BCE9515511B32AD1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kata-BerlinClockTests/Pods-Kata-BerlinClockTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kata-BerlinClockTests/Pods-Kata-BerlinClockTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kata-BerlinClockTests/Pods-Kata-BerlinClockTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B079E31F0E7055725CC6E2CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kata-BerlinClockTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD14790DD38D554C8EE5F92E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kata-BerlinClock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F07E61C2331B6C5005B9698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F07E6462331B72D005B9698 /* HourConverter.swift in Sources */,
+				2F07E64A2331B743005B9698 /* SecondConverter.swift in Sources */,
+				2F07E6262331B6C5005B9698 /* ViewController.swift in Sources */,
+				2F07E6242331B6C5005B9698 /* AppDelegate.swift in Sources */,
+				2F07E6442331B713005B9698 /* BerlinClock.swift in Sources */,
+				2F07E64C2331B794005B9698 /* TimeIsOn.swift in Sources */,
+				2F07E6482331B73A005B9698 /* MinuteConverter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F07E6302331B6C7005B9698 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F07E6522331B889005B9698 /* SecondConverterTests.swift in Sources */,
+				2F07E6502331B87B005B9698 /* MinuteConverterTests.swift in Sources */,
+				2F07E64E2331B831005B9698 /* HourConverterTests.swift in Sources */,
+				2F07E6392331B6C7005B9698 /* Kata_BerlinClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F07E6362331B6C7005B9698 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F07E61F2331B6C5005B9698 /* Kata-BerlinClock */;
+			targetProxy = 2F07E6352331B6C7005B9698 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2F07E6272331B6C5005B9698 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F07E6282331B6C5005B9698 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F07E62C2331B6C6005B9698 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F07E62D2331B6C6005B9698 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F07E63B2331B6C7005B9698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2F07E63C2331B6C7005B9698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F07E63E2331B6C7005B9698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3397CBE6F86AB9E1BEFCC522 /* Pods-Kata-BerlinClock.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CDSWL7G2XC;
+				INFOPLIST_FILE = "Kata-BerlinClock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Personal.Kata-BerlinClock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F07E63F2331B6C7005B9698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB7D6D4B668D81AE33EC365E /* Pods-Kata-BerlinClock.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CDSWL7G2XC;
+				INFOPLIST_FILE = "Kata-BerlinClock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Personal.Kata-BerlinClock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2F07E6412331B6C7005B9698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3081E2DA797BEEE92182BF1C /* Pods-Kata-BerlinClockTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CDSWL7G2XC;
+				INFOPLIST_FILE = "Kata-BerlinClockTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Personal.Kata-BerlinClockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kata-BerlinClock.app/Kata-BerlinClock";
+			};
+			name = Debug;
+		};
+		2F07E6422331B6C7005B9698 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CA4F7F4ADBB78C98E94D5E8 /* Pods-Kata-BerlinClockTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CDSWL7G2XC;
+				INFOPLIST_FILE = "Kata-BerlinClockTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Personal.Kata-BerlinClockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kata-BerlinClock.app/Kata-BerlinClock";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F07E61B2331B6C5005B9698 /* Build configuration list for PBXProject "Kata-BerlinClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F07E63B2331B6C7005B9698 /* Debug */,
+				2F07E63C2331B6C7005B9698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F07E63D2331B6C7005B9698 /* Build configuration list for PBXNativeTarget "Kata-BerlinClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F07E63E2331B6C7005B9698 /* Debug */,
+				2F07E63F2331B6C7005B9698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F07E6402331B6C7005B9698 /* Build configuration list for PBXNativeTarget "Kata-BerlinClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F07E6412331B6C7005B9698 /* Debug */,
+				2F07E6422331B6C7005B9698 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F07E6182331B6C5005B9698 /* Project object */;
+}

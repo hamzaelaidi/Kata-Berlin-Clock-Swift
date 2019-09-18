@@ -1,0 +1,959 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00805B9BD57A44DCDDFE99197AD7E7C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */; };
+		0BCF9FABAFED3D8E8D4D1CBCD43D7A15 /* ArgumentCaptorValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39C7E5D79C78091BB30CC7D8BAE05E7 /* ArgumentCaptorValues.swift */; };
+		1610FA71B0D7258F1BACCBE841798B73 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C061463250766C9C05995AB8EE63E66 /* XCTest.framework */; };
+		170907ECDCB4D32D941D68EDE5DB5D5A /* ArgumentClosureCaptor+ThreeArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FD3AB808326D9630A22453F75DDF1E /* ArgumentClosureCaptor+ThreeArgs.swift */; };
+		191B964B9DAC3DC940965E2B9E63B9D8 /* ArgumentClosureCaptor+NoArg.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD59E43F399861E80B49A51D902E60 /* ArgumentClosureCaptor+NoArg.swift */; };
+		1A41F4A15BDF67C9B67457FE07FE1DD7 /* ArgumentVerifyOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B472DF94A49F904D1A596CF2D46D1709 /* ArgumentVerifyOptional.swift */; };
+		2C0F68C154E0220C5F0D0388E85C92FC /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FCD85196831F0D53047C8D124B99B7 /* Argument.swift */; };
+		33E6881AE8CC6EAFAC1308B73716E998 /* Array+MockUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0A6EB89878ABB62ACF329D51AD13FA /* Array+MockUsable.swift */; };
+		3B28DD2A574080F2BB41565EA8AD39BD /* ArgumentClosure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1C51BF88BEEB723654843DA7C2AC5B /* ArgumentClosure.swift */; };
+		3C05AC56CEE4F17793D969E0D4C3D4B1 /* CallInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF440AEF05A7575D7880509E47E91F8 /* CallInterceptor.swift */; };
+		49B99888E2BB38131F8C4D3CE6F020B0 /* Pods-Kata-BerlinClock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F296C534F86EB3F2B1B9AA848276809 /* Pods-Kata-BerlinClock-dummy.m */; };
+		4AF5ED9B70AE20532C86006DDD771767 /* InstantMock.h in Headers */ = {isa = PBXBuildFile; fileRef = 2710C450C2CF949971D9F0C0A99DE0F3 /* InstantMock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E243E679F3AA9587A61A858B8E0E944 /* Arg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1432E0D893869FDDAA3DF50203ABED58 /* Arg.swift */; };
+		535AA297AD46E7A0735155E1AEFEA4E5 /* ArgumentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E89E4CA06B33CDDD20B05B83265EE /* ArgumentFactory.swift */; };
+		6AE218BA1CE75F58578440D68F708F7F /* CallConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E658A97A9A5624352C3735BF0F1B160 /* CallConfiguration.swift */; };
+		6D338F38780DE83B32F2EE37A301755C /* ExpectationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B047DCC44D515E17B2172EFAD55943 /* ExpectationFactory.swift */; };
+		700574D70603D4EAD3367B04383EA509 /* Verifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9194CE56BCA6659E906CCCE856DCCF95 /* Verifier.swift */; };
+		72115A8FE7F6B0245C0E17879D7CB81A /* Int+MockUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B4510475DAA0D68B7D8994A6407004 /* Int+MockUsable.swift */; };
+		73C88BDA9E0FDA8D020ADEB262A468F3 /* Set+MockUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C1F85BB8B9D15769E1F12AB9BC5808 /* Set+MockUsable.swift */; };
+		756832D869D038B70BFE342D60F57796 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5108811D6793DCC439BFB749145A6E8E /* Property.swift */; };
+		767849B4C4A4BE39F870DA14A53A132D /* ArgumentClosureCaptor+TwoArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FDD22A646EB1F473007495CA86FDA0 /* ArgumentClosureCaptor+TwoArgs.swift */; };
+		7C83E716C0E3D4F11BFEFE4F3DEE8B1E /* ArgumentClosureCaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B845659A0AC6B36F140E2D7B0BACE34D /* ArgumentClosureCaptor.swift */; };
+		7D0A042B0785C29E5A23C07CA31B6882 /* String+MockUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9B1D02887C44787C9C05047C9A60B1 /* String+MockUsable.swift */; };
+		7EC489B17D8CA82D5A81847B6D0E95E3 /* Pods-Kata-BerlinClock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C1D2935D76F65995F3EEB1E03EC24A2 /* Pods-Kata-BerlinClock-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87AD5E363C2DE540AD80D4FC1D7EC739 /* ArgumentClosureCaptor+OneArg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832DB47C93AB06C8C55CEC67ACD68A91 /* ArgumentClosureCaptor+OneArg.swift */; };
+		8BA633BE21940B05A0B664BF4B91849F /* Pods-Kata-BerlinClockTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A42A455155E7973C6ED615A4F738CDE /* Pods-Kata-BerlinClockTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		905DAF2862C377F8B749AE1611B2CDEE /* InstantMock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D93D6681882A099B12F43F4B5F095D5 /* InstantMock-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		925F994EDF47EB47DB09868379349F28 /* ArgumentValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B1CEA69734B2851FA0E907569A5408 /* ArgumentValue.swift */; };
+		945DCBBC73A301413456CB16406D9F6F /* MockUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B866D3C8AA1D177D0DF8D506027BB77 /* MockUsable.swift */; };
+		96AFF4EECB5E51A74372A6DE5D18985B /* Expectation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5236428BDBA9DE89A633FDFDAB1BB9CC /* Expectation.swift */; };
+		9FF3AC8C8D2124C01E42AFAC6DD073C5 /* ArgumentsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970ECB8F8D09F774EA1DC5ABEC09107F /* ArgumentsConfiguration.swift */; };
+		A2C4A47BEE8919CE17D42DF1897583BD /* DefaultClosureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E615A44E93041CD500EA7DE3B16D1 /* DefaultClosureHandler.swift */; };
+		A34FDB41B1CF0F554CFEABA837A05174 /* Arg+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347DFFC8E1CC8DA1B77DBBA4649004EF /* Arg+Closure.swift */; };
+		A556671906F628002C775FF7C9E3AEDA /* Assertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC5454F577686F986CD8ED3432167EC /* Assertion.swift */; };
+		A6B99ECD5552078A53355ED74A2D8D96 /* ArgumentVerifyMandatory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4370E180328D546882C553975C073AEE /* ArgumentVerifyMandatory.swift */; };
+		B84DD976C7AEADC6EC711DF8386DDC93 /* InstantMock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC86D63A9F4A21A371498017B72237B /* InstantMock-dummy.m */; };
+		BA076A62E187F02353A73268C41ADA7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */; };
+		BF12FA24237AFC906AF88F0C88951030 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */; };
+		C07FB66A33732CB50B81357074FF38DB /* ArgumentCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4607BBB96E84E12952CB133D7095F0B /* ArgumentCapture.swift */; };
+		D73B5AD0A13D67382DDAB681CBB06B13 /* ArgumentCaptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A84AB7726BD425A7F2CD669BCA8DF9D /* ArgumentCaptor.swift */; };
+		D8C2A1322BDB57B849A593BFB074BC00 /* ArgumentClosureCaptor+FiveArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE6EC41CB1C22AA57344166713849A /* ArgumentClosureCaptor+FiveArgs.swift */; };
+		DC93E292E57B8D24AC9F5D26A0439D53 /* Dictionary+MockUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA7841E5A43849F0ACEA63A57F6FB1A /* Dictionary+MockUsable.swift */; };
+		E07F84D3C78A7C4154B8DD306981EDAF /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8595102B44217AA7DA67741B512966 /* Stub.swift */; };
+		E27212042E291EBD2A0DC4FA1DB1342A /* ArgumentVerify.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505BA185B2A3E2804ED67CDF315FB054 /* ArgumentVerify.swift */; };
+		E36365C5EFA885E283C7D738D61BC7DA /* CallInterceptorStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F404018C79D2A1674277C7335876D308 /* CallInterceptorStorage.swift */; };
+		E4936D5DA86931016FEB432D418FBAC5 /* Pods-Kata-BerlinClockTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADC49E613C63BA989723758385FEDAE2 /* Pods-Kata-BerlinClockTests-dummy.m */; };
+		E729DD6298BBF1ED83F764808E073F95 /* ArgumentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E894C3C6B8A4B59206EF7A46C8F384AB /* ArgumentStorage.swift */; };
+		E9E60B9D992DAE0625E150CACF329603 /* Bool+MockUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96033DC07EFA92AA5727709F5AF7BD53 /* Bool+MockUsable.swift */; };
+		F287D76B187436B4A2983AFC7BE8D09D /* ArgumentsMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9694A9F1E10A228240BC14971A09B950 /* ArgumentsMatcher.swift */; };
+		F45D5C0A938A0CEC3BEF06A93438002B /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483B1FE8C7DAABA6A01969F30D7239F2 /* Mock.swift */; };
+		F6A7B336DC32E7F7F038F88DB8B7C47B /* DefaultValueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9631247639771070AFEB7D9F6EADF5 /* DefaultValueHandler.swift */; };
+		F8278ECC98CBCF89D4B53290D9A770D7 /* Double+MockUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E80A84A2EA728BF2603348E0B90A84 /* Double+MockUsable.swift */; };
+		FC30C7ECEE70B07E6A55E94DE8A903C5 /* ArgumentClosureCaptor+FourArgs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0780855493AB75EBA509964FBD7B6B /* ArgumentClosureCaptor+FourArgs.swift */; };
+		FEFAD91280EA9AC4C51AB1A928A79518 /* ArgumentAny.swift in Sources */ = {isa = PBXBuildFile; fileRef = A897EA0B860C8D7150C24B0F18FA4D69 /* ArgumentAny.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22C2888F2538D39A4323F111900DA5CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E9EAE6FCA3E71D46CD3260C91A02F08;
+			remoteInfo = InstantMock;
+		};
+		646B18FB1B794A36D7D3C98C9AA87073 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE69B5840E1328C4BCFE468597C9E113;
+			remoteInfo = "Pods-Kata-BerlinClock";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0241106D4E560D690306B090C6856C7E /* InstantMock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = InstantMock.framework; path = InstantMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		05C1F85BB8B9D15769E1F12AB9BC5808 /* Set+MockUsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Set+MockUsable.swift"; path = "Sources/InstantMock/MockUsable/Set+MockUsable.swift"; sourceTree = "<group>"; };
+		0673BBE3F7F2E1CB4C2EC87FD703D4F9 /* Pods-Kata-BerlinClockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kata-BerlinClockTests.release.xcconfig"; sourceTree = "<group>"; };
+		06FD3AB808326D9630A22453F75DDF1E /* ArgumentClosureCaptor+ThreeArgs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ArgumentClosureCaptor+ThreeArgs.swift"; path = "Sources/InstantMock/Arguments/Captor/ArgumentClosureCaptor/ArgumentClosureCaptor+ThreeArgs.swift"; sourceTree = "<group>"; };
+		0B2278AF020E5A725F105AC798A24C71 /* Pods-Kata-BerlinClock-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kata-BerlinClock-Info.plist"; sourceTree = "<group>"; };
+		0C1D2935D76F65995F3EEB1E03EC24A2 /* Pods-Kata-BerlinClock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kata-BerlinClock-umbrella.h"; sourceTree = "<group>"; };
+		0DF440AEF05A7575D7880509E47E91F8 /* CallInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallInterceptor.swift; path = Sources/InstantMock/Interceptors/CallInterceptor.swift; sourceTree = "<group>"; };
+		10431FF8D1251AB34606958B6B168F19 /* InstantMock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InstantMock-prefix.pch"; sourceTree = "<group>"; };
+		1432E0D893869FDDAA3DF50203ABED58 /* Arg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Arg.swift; path = Sources/InstantMock/Arguments/Arg.swift; sourceTree = "<group>"; };
+		2710C450C2CF949971D9F0C0A99DE0F3 /* InstantMock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = InstantMock.h; path = Sources/InstantMock.h; sourceTree = "<group>"; };
+		2C061463250766C9C05995AB8EE63E66 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2F8595102B44217AA7DA67741B512966 /* Stub.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stub.swift; path = Sources/InstantMock/Interceptors/Stub.swift; sourceTree = "<group>"; };
+		347DFFC8E1CC8DA1B77DBBA4649004EF /* Arg+Closure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Arg+Closure.swift"; path = "Sources/InstantMock/Arguments/Arg+Closure.swift"; sourceTree = "<group>"; };
+		38AD99A407BFE0891C151ED71F51A2A9 /* Pods-Kata-BerlinClockTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kata-BerlinClockTests-Info.plist"; sourceTree = "<group>"; };
+		3A84AB7726BD425A7F2CD669BCA8DF9D /* ArgumentCaptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentCaptor.swift; path = Sources/InstantMock/Arguments/Captor/ArgumentCaptor.swift; sourceTree = "<group>"; };
+		3E658A97A9A5624352C3735BF0F1B160 /* CallConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallConfiguration.swift; path = Sources/InstantMock/Interceptors/Helpers/CallConfiguration.swift; sourceTree = "<group>"; };
+		4370E180328D546882C553975C073AEE /* ArgumentVerifyMandatory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentVerifyMandatory.swift; path = Sources/InstantMock/Arguments/Argument/ArgumentVerify/ArgumentVerifyMandatory.swift; sourceTree = "<group>"; };
+		45B4510475DAA0D68B7D8994A6407004 /* Int+MockUsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+MockUsable.swift"; path = "Sources/InstantMock/MockUsable/Int+MockUsable.swift"; sourceTree = "<group>"; };
+		483B1FE8C7DAABA6A01969F30D7239F2 /* Mock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mock.swift; path = Sources/InstantMock/Mock.swift; sourceTree = "<group>"; };
+		48457C0F68D1E70E7878175B8E0DE795 /* Pods-Kata-BerlinClock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Kata-BerlinClock.modulemap"; sourceTree = "<group>"; };
+		505BA185B2A3E2804ED67CDF315FB054 /* ArgumentVerify.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentVerify.swift; path = Sources/InstantMock/Arguments/Argument/ArgumentVerify/ArgumentVerify.swift; sourceTree = "<group>"; };
+		5108811D6793DCC439BFB749145A6E8E /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Sources/InstantMock/Property/Property.swift; sourceTree = "<group>"; };
+		5148E8A20EE60741975D75A0496ECB98 /* Pods_Kata_BerlinClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Kata_BerlinClock.framework; path = "Pods-Kata-BerlinClock.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5236428BDBA9DE89A633FDFDAB1BB9CC /* Expectation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expectation.swift; path = Sources/InstantMock/Interceptors/Expectation.swift; sourceTree = "<group>"; };
+		534E615A44E93041CD500EA7DE3B16D1 /* DefaultClosureHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultClosureHandler.swift; path = Sources/InstantMock/DefaultValue/DefaultClosureHandler.swift; sourceTree = "<group>"; };
+		56B1CEA69734B2851FA0E907569A5408 /* ArgumentValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentValue.swift; path = Sources/InstantMock/Arguments/Argument/ArgumentValue.swift; sourceTree = "<group>"; };
+		576769AFA94D278CF51D908C34929BE3 /* InstantMock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = InstantMock.modulemap; sourceTree = "<group>"; };
+		5D9E89E4CA06B33CDDD20B05B83265EE /* ArgumentFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentFactory.swift; path = Sources/InstantMock/Arguments/Helpers/ArgumentFactory.swift; sourceTree = "<group>"; };
+		6D1C51BF88BEEB723654843DA7C2AC5B /* ArgumentClosure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentClosure.swift; path = Sources/InstantMock/Arguments/Argument/ArgumentClosure.swift; sourceTree = "<group>"; };
+		6EA7841E5A43849F0ACEA63A57F6FB1A /* Dictionary+MockUsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+MockUsable.swift"; path = "Sources/InstantMock/MockUsable/Dictionary+MockUsable.swift"; sourceTree = "<group>"; };
+		6F296C534F86EB3F2B1B9AA848276809 /* Pods-Kata-BerlinClock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kata-BerlinClock-dummy.m"; sourceTree = "<group>"; };
+		7B866D3C8AA1D177D0DF8D506027BB77 /* MockUsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MockUsable.swift; path = Sources/InstantMock/MockUsable/MockUsable.swift; sourceTree = "<group>"; };
+		7D93D6681882A099B12F43F4B5F095D5 /* InstantMock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "InstantMock-umbrella.h"; sourceTree = "<group>"; };
+		7EC5454F577686F986CD8ED3432167EC /* Assertion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assertion.swift; path = Sources/InstantMock/Verifications/Assertion.swift; sourceTree = "<group>"; };
+		832A68C6E082E985B1E9D24CC80F767F /* Pods-Kata-BerlinClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kata-BerlinClock.release.xcconfig"; sourceTree = "<group>"; };
+		832DB47C93AB06C8C55CEC67ACD68A91 /* ArgumentClosureCaptor+OneArg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ArgumentClosureCaptor+OneArg.swift"; path = "Sources/InstantMock/Arguments/Captor/ArgumentClosureCaptor/ArgumentClosureCaptor+OneArg.swift"; sourceTree = "<group>"; };
+		83B047DCC44D515E17B2172EFAD55943 /* ExpectationFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpectationFactory.swift; path = Sources/InstantMock/Factories/ExpectationFactory.swift; sourceTree = "<group>"; };
+		86FA59B2733E9D6956B2FF2B1166E5BE /* Pods-Kata-BerlinClock-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kata-BerlinClock-acknowledgements.plist"; sourceTree = "<group>"; };
+		8A42A455155E7973C6ED615A4F738CDE /* Pods-Kata-BerlinClockTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Kata-BerlinClockTests-umbrella.h"; sourceTree = "<group>"; };
+		9194CE56BCA6659E906CCCE856DCCF95 /* Verifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Verifier.swift; path = Sources/InstantMock/Verifications/Verifier.swift; sourceTree = "<group>"; };
+		920870E1A4F0341EE17406A33513D2B3 /* InstantMock-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "InstantMock-Info.plist"; sourceTree = "<group>"; };
+		96033DC07EFA92AA5727709F5AF7BD53 /* Bool+MockUsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bool+MockUsable.swift"; path = "Sources/InstantMock/MockUsable/Bool+MockUsable.swift"; sourceTree = "<group>"; };
+		9694A9F1E10A228240BC14971A09B950 /* ArgumentsMatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentsMatcher.swift; path = Sources/InstantMock/Arguments/Helpers/ArgumentsMatcher.swift; sourceTree = "<group>"; };
+		970ECB8F8D09F774EA1DC5ABEC09107F /* ArgumentsConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentsConfiguration.swift; path = Sources/InstantMock/Arguments/Helpers/ArgumentsConfiguration.swift; sourceTree = "<group>"; };
+		9B7E0A07DC3F68E9B8BA30C1B1C3A6FA /* Pods-Kata-BerlinClockTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Kata-BerlinClockTests-frameworks.sh"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E3203EC8D534E73D48A3F7D1CC32DF4 /* Pods-Kata-BerlinClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kata-BerlinClock.debug.xcconfig"; sourceTree = "<group>"; };
+		A4607BBB96E84E12952CB133D7095F0B /* ArgumentCapture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentCapture.swift; path = Sources/InstantMock/Arguments/Argument/ArgumentCapture.swift; sourceTree = "<group>"; };
+		A897EA0B860C8D7150C24B0F18FA4D69 /* ArgumentAny.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentAny.swift; path = Sources/InstantMock/Arguments/Argument/ArgumentAny.swift; sourceTree = "<group>"; };
+		ADC49E613C63BA989723758385FEDAE2 /* Pods-Kata-BerlinClockTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Kata-BerlinClockTests-dummy.m"; sourceTree = "<group>"; };
+		B3FE6EC41CB1C22AA57344166713849A /* ArgumentClosureCaptor+FiveArgs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ArgumentClosureCaptor+FiveArgs.swift"; path = "Sources/InstantMock/Arguments/Captor/ArgumentClosureCaptor/ArgumentClosureCaptor+FiveArgs.swift"; sourceTree = "<group>"; };
+		B4028D3ED6D37CCC187CD37E80E621D5 /* Pods-Kata-BerlinClock-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Kata-BerlinClock-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B472DF94A49F904D1A596CF2D46D1709 /* ArgumentVerifyOptional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentVerifyOptional.swift; path = Sources/InstantMock/Arguments/Argument/ArgumentVerify/ArgumentVerifyOptional.swift; sourceTree = "<group>"; };
+		B845659A0AC6B36F140E2D7B0BACE34D /* ArgumentClosureCaptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentClosureCaptor.swift; path = Sources/InstantMock/Arguments/Captor/ArgumentClosureCaptor.swift; sourceTree = "<group>"; };
+		B8FCD85196831F0D53047C8D124B99B7 /* Argument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Argument.swift; path = Sources/InstantMock/Arguments/Argument/Argument.swift; sourceTree = "<group>"; };
+		BB0A6EB89878ABB62ACF329D51AD13FA /* Array+MockUsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+MockUsable.swift"; path = "Sources/InstantMock/MockUsable/Array+MockUsable.swift"; sourceTree = "<group>"; };
+		BC2E4E46CBAD545E599E609F7196FB89 /* Pods-Kata-BerlinClockTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Kata-BerlinClockTests.modulemap"; sourceTree = "<group>"; };
+		C63F9B13B683AA4CF11640F3B64A38C5 /* InstantMock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = InstantMock.xcconfig; sourceTree = "<group>"; };
+		C8E1A82B8C6091F129B8EDC61B757924 /* Pods-Kata-BerlinClockTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Kata-BerlinClockTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CC0780855493AB75EBA509964FBD7B6B /* ArgumentClosureCaptor+FourArgs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ArgumentClosureCaptor+FourArgs.swift"; path = "Sources/InstantMock/Arguments/Captor/ArgumentClosureCaptor/ArgumentClosureCaptor+FourArgs.swift"; sourceTree = "<group>"; };
+		CFCAFAF20E671C47CFF1F9C03648FEA5 /* Pods_Kata_BerlinClockTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Kata_BerlinClockTests.framework; path = "Pods-Kata-BerlinClockTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E80A84A2EA728BF2603348E0B90A84 /* Double+MockUsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Double+MockUsable.swift"; path = "Sources/InstantMock/MockUsable/Double+MockUsable.swift"; sourceTree = "<group>"; };
+		D6FDD22A646EB1F473007495CA86FDA0 /* ArgumentClosureCaptor+TwoArgs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ArgumentClosureCaptor+TwoArgs.swift"; path = "Sources/InstantMock/Arguments/Captor/ArgumentClosureCaptor/ArgumentClosureCaptor+TwoArgs.swift"; sourceTree = "<group>"; };
+		E894C3C6B8A4B59206EF7A46C8F384AB /* ArgumentStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentStorage.swift; path = Sources/InstantMock/Arguments/Helpers/ArgumentStorage.swift; sourceTree = "<group>"; };
+		EB9B1D02887C44787C9C05047C9A60B1 /* String+MockUsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MockUsable.swift"; path = "Sources/InstantMock/MockUsable/String+MockUsable.swift"; sourceTree = "<group>"; };
+		EC657D5C2A95FAF2FD90367D0C2FB544 /* Pods-Kata-BerlinClockTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Kata-BerlinClockTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F1CD59E43F399861E80B49A51D902E60 /* ArgumentClosureCaptor+NoArg.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ArgumentClosureCaptor+NoArg.swift"; path = "Sources/InstantMock/Arguments/Captor/ArgumentClosureCaptor/ArgumentClosureCaptor+NoArg.swift"; sourceTree = "<group>"; };
+		F39C7E5D79C78091BB30CC7D8BAE05E7 /* ArgumentCaptorValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentCaptorValues.swift; path = Sources/InstantMock/Arguments/Captor/ArgumentCaptorValues.swift; sourceTree = "<group>"; };
+		F404018C79D2A1674277C7335876D308 /* CallInterceptorStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallInterceptorStorage.swift; path = Sources/InstantMock/Interceptors/Helpers/CallInterceptorStorage.swift; sourceTree = "<group>"; };
+		FBC86D63A9F4A21A371498017B72237B /* InstantMock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "InstantMock-dummy.m"; sourceTree = "<group>"; };
+		FD75CA37FD585DBB07E2B1406C65E104 /* Pods-Kata-BerlinClockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Kata-BerlinClockTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF9631247639771070AFEB7D9F6EADF5 /* DefaultValueHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DefaultValueHandler.swift; path = Sources/InstantMock/DefaultValue/DefaultValueHandler.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45A1FAFEAC6FAECB7B8179562F78316F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF12FA24237AFC906AF88F0C88951030 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD154E3BD8E9627DB8E53BA6CDBA81A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA076A62E187F02353A73268C41ADA7A /* Foundation.framework in Frameworks */,
+				1610FA71B0D7258F1BACCBE841798B73 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7B8DE3E51D6F3FFE43AA865B69BAE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00805B9BD57A44DCDDFE99197AD7E7C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E285571EF144F8DACCF451128B351DD /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1893D1FC8AF00533E613293524295D60 /* Pods-Kata-BerlinClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC2E4E46CBAD545E599E609F7196FB89 /* Pods-Kata-BerlinClockTests.modulemap */,
+				EC657D5C2A95FAF2FD90367D0C2FB544 /* Pods-Kata-BerlinClockTests-acknowledgements.markdown */,
+				C8E1A82B8C6091F129B8EDC61B757924 /* Pods-Kata-BerlinClockTests-acknowledgements.plist */,
+				ADC49E613C63BA989723758385FEDAE2 /* Pods-Kata-BerlinClockTests-dummy.m */,
+				9B7E0A07DC3F68E9B8BA30C1B1C3A6FA /* Pods-Kata-BerlinClockTests-frameworks.sh */,
+				38AD99A407BFE0891C151ED71F51A2A9 /* Pods-Kata-BerlinClockTests-Info.plist */,
+				8A42A455155E7973C6ED615A4F738CDE /* Pods-Kata-BerlinClockTests-umbrella.h */,
+				FD75CA37FD585DBB07E2B1406C65E104 /* Pods-Kata-BerlinClockTests.debug.xcconfig */,
+				0673BBE3F7F2E1CB4C2EC87FD703D4F9 /* Pods-Kata-BerlinClockTests.release.xcconfig */,
+			);
+			name = "Pods-Kata-BerlinClockTests";
+			path = "Target Support Files/Pods-Kata-BerlinClockTests";
+			sourceTree = "<group>";
+		};
+		33C5B1BA429B3C56EB6015B6BC0C17F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0241106D4E560D690306B090C6856C7E /* InstantMock.framework */,
+				5148E8A20EE60741975D75A0496ECB98 /* Pods_Kata_BerlinClock.framework */,
+				CFCAFAF20E671C47CFF1F9C03648FEA5 /* Pods_Kata_BerlinClockTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E285571EF144F8DACCF451128B351DD /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				033A36A29482FD32230FE0CA177F9BD3 /* Foundation.framework */,
+				2C061463250766C9C05995AB8EE63E66 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4F960824AF8E7459A7AC507CE1A7ECBE /* InstantMock */ = {
+			isa = PBXGroup;
+			children = (
+				1432E0D893869FDDAA3DF50203ABED58 /* Arg.swift */,
+				347DFFC8E1CC8DA1B77DBBA4649004EF /* Arg+Closure.swift */,
+				B8FCD85196831F0D53047C8D124B99B7 /* Argument.swift */,
+				A897EA0B860C8D7150C24B0F18FA4D69 /* ArgumentAny.swift */,
+				3A84AB7726BD425A7F2CD669BCA8DF9D /* ArgumentCaptor.swift */,
+				F39C7E5D79C78091BB30CC7D8BAE05E7 /* ArgumentCaptorValues.swift */,
+				A4607BBB96E84E12952CB133D7095F0B /* ArgumentCapture.swift */,
+				6D1C51BF88BEEB723654843DA7C2AC5B /* ArgumentClosure.swift */,
+				B845659A0AC6B36F140E2D7B0BACE34D /* ArgumentClosureCaptor.swift */,
+				B3FE6EC41CB1C22AA57344166713849A /* ArgumentClosureCaptor+FiveArgs.swift */,
+				CC0780855493AB75EBA509964FBD7B6B /* ArgumentClosureCaptor+FourArgs.swift */,
+				F1CD59E43F399861E80B49A51D902E60 /* ArgumentClosureCaptor+NoArg.swift */,
+				832DB47C93AB06C8C55CEC67ACD68A91 /* ArgumentClosureCaptor+OneArg.swift */,
+				06FD3AB808326D9630A22453F75DDF1E /* ArgumentClosureCaptor+ThreeArgs.swift */,
+				D6FDD22A646EB1F473007495CA86FDA0 /* ArgumentClosureCaptor+TwoArgs.swift */,
+				5D9E89E4CA06B33CDDD20B05B83265EE /* ArgumentFactory.swift */,
+				970ECB8F8D09F774EA1DC5ABEC09107F /* ArgumentsConfiguration.swift */,
+				9694A9F1E10A228240BC14971A09B950 /* ArgumentsMatcher.swift */,
+				E894C3C6B8A4B59206EF7A46C8F384AB /* ArgumentStorage.swift */,
+				56B1CEA69734B2851FA0E907569A5408 /* ArgumentValue.swift */,
+				505BA185B2A3E2804ED67CDF315FB054 /* ArgumentVerify.swift */,
+				4370E180328D546882C553975C073AEE /* ArgumentVerifyMandatory.swift */,
+				B472DF94A49F904D1A596CF2D46D1709 /* ArgumentVerifyOptional.swift */,
+				BB0A6EB89878ABB62ACF329D51AD13FA /* Array+MockUsable.swift */,
+				7EC5454F577686F986CD8ED3432167EC /* Assertion.swift */,
+				96033DC07EFA92AA5727709F5AF7BD53 /* Bool+MockUsable.swift */,
+				3E658A97A9A5624352C3735BF0F1B160 /* CallConfiguration.swift */,
+				0DF440AEF05A7575D7880509E47E91F8 /* CallInterceptor.swift */,
+				F404018C79D2A1674277C7335876D308 /* CallInterceptorStorage.swift */,
+				534E615A44E93041CD500EA7DE3B16D1 /* DefaultClosureHandler.swift */,
+				FF9631247639771070AFEB7D9F6EADF5 /* DefaultValueHandler.swift */,
+				6EA7841E5A43849F0ACEA63A57F6FB1A /* Dictionary+MockUsable.swift */,
+				D2E80A84A2EA728BF2603348E0B90A84 /* Double+MockUsable.swift */,
+				5236428BDBA9DE89A633FDFDAB1BB9CC /* Expectation.swift */,
+				83B047DCC44D515E17B2172EFAD55943 /* ExpectationFactory.swift */,
+				2710C450C2CF949971D9F0C0A99DE0F3 /* InstantMock.h */,
+				45B4510475DAA0D68B7D8994A6407004 /* Int+MockUsable.swift */,
+				483B1FE8C7DAABA6A01969F30D7239F2 /* Mock.swift */,
+				7B866D3C8AA1D177D0DF8D506027BB77 /* MockUsable.swift */,
+				5108811D6793DCC439BFB749145A6E8E /* Property.swift */,
+				05C1F85BB8B9D15769E1F12AB9BC5808 /* Set+MockUsable.swift */,
+				EB9B1D02887C44787C9C05047C9A60B1 /* String+MockUsable.swift */,
+				2F8595102B44217AA7DA67741B512966 /* Stub.swift */,
+				9194CE56BCA6659E906CCCE856DCCF95 /* Verifier.swift */,
+				EE06FBF9479B90719AA233A03ABF8998 /* Support Files */,
+			);
+			name = InstantMock;
+			path = InstantMock;
+			sourceTree = "<group>";
+		};
+		5BCAADFA0E825349E293FC8DE9A3ECDE /* Pods-Kata-BerlinClock */ = {
+			isa = PBXGroup;
+			children = (
+				48457C0F68D1E70E7878175B8E0DE795 /* Pods-Kata-BerlinClock.modulemap */,
+				B4028D3ED6D37CCC187CD37E80E621D5 /* Pods-Kata-BerlinClock-acknowledgements.markdown */,
+				86FA59B2733E9D6956B2FF2B1166E5BE /* Pods-Kata-BerlinClock-acknowledgements.plist */,
+				6F296C534F86EB3F2B1B9AA848276809 /* Pods-Kata-BerlinClock-dummy.m */,
+				0B2278AF020E5A725F105AC798A24C71 /* Pods-Kata-BerlinClock-Info.plist */,
+				0C1D2935D76F65995F3EEB1E03EC24A2 /* Pods-Kata-BerlinClock-umbrella.h */,
+				9E3203EC8D534E73D48A3F7D1CC32DF4 /* Pods-Kata-BerlinClock.debug.xcconfig */,
+				832A68C6E082E985B1E9D24CC80F767F /* Pods-Kata-BerlinClock.release.xcconfig */,
+			);
+			name = "Pods-Kata-BerlinClock";
+			path = "Target Support Files/Pods-Kata-BerlinClock";
+			sourceTree = "<group>";
+		};
+		C4C042706EE235A52C77E42BFC2371E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F960824AF8E7459A7AC507CE1A7ECBE /* InstantMock */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				C4C042706EE235A52C77E42BFC2371E5 /* Pods */,
+				33C5B1BA429B3C56EB6015B6BC0C17F3 /* Products */,
+				CFD736E14AE3729776AB1BF61325BB1A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CFD736E14AE3729776AB1BF61325BB1A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BCAADFA0E825349E293FC8DE9A3ECDE /* Pods-Kata-BerlinClock */,
+				1893D1FC8AF00533E613293524295D60 /* Pods-Kata-BerlinClockTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		EE06FBF9479B90719AA233A03ABF8998 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				576769AFA94D278CF51D908C34929BE3 /* InstantMock.modulemap */,
+				C63F9B13B683AA4CF11640F3B64A38C5 /* InstantMock.xcconfig */,
+				FBC86D63A9F4A21A371498017B72237B /* InstantMock-dummy.m */,
+				920870E1A4F0341EE17406A33513D2B3 /* InstantMock-Info.plist */,
+				10431FF8D1251AB34606958B6B168F19 /* InstantMock-prefix.pch */,
+				7D93D6681882A099B12F43F4B5F095D5 /* InstantMock-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/InstantMock";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1A2DEAE2985C50E252A9CC2B631BF6BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EC489B17D8CA82D5A81847B6D0E95E3 /* Pods-Kata-BerlinClock-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F2EE67C668FDA74CD2057DFF564DCC0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BA633BE21940B05A0B664BF4B91849F /* Pods-Kata-BerlinClockTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB64B521E7DADC79022689FACDF7C487 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				905DAF2862C377F8B749AE1611B2CDEE /* InstantMock-umbrella.h in Headers */,
+				4AF5ED9B70AE20532C86006DDD771767 /* InstantMock.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		47B60E3FDBCB4854601746D4155E523F /* Pods-Kata-BerlinClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CA647ED8E0DCA8A31800D985CA72DA9 /* Build configuration list for PBXNativeTarget "Pods-Kata-BerlinClockTests" */;
+			buildPhases = (
+				1F2EE67C668FDA74CD2057DFF564DCC0 /* Headers */,
+				BCAA4054818D5AE5071B310779912FDA /* Sources */,
+				EF7B8DE3E51D6F3FFE43AA865B69BAE8 /* Frameworks */,
+				050FEB480B5102C1B337E2B70D44684D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB3940404BAEE1E5E83BBCA6EABE754A /* PBXTargetDependency */,
+				DBD2F083B920176A2AB68D194CBC2990 /* PBXTargetDependency */,
+			);
+			name = "Pods-Kata-BerlinClockTests";
+			productName = "Pods-Kata-BerlinClockTests";
+			productReference = CFCAFAF20E671C47CFF1F9C03648FEA5 /* Pods_Kata_BerlinClockTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5E9EAE6FCA3E71D46CD3260C91A02F08 /* InstantMock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9AF24453EBCB35C55E83E24B2276178 /* Build configuration list for PBXNativeTarget "InstantMock" */;
+			buildPhases = (
+				AB64B521E7DADC79022689FACDF7C487 /* Headers */,
+				EA8CFFD1EBAD0A9CC7F7F0BD9AB60B40 /* Sources */,
+				CD154E3BD8E9627DB8E53BA6CDBA81A1 /* Frameworks */,
+				DF540E106F1D197DA8ED3FED9B39C448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InstantMock;
+			productName = InstantMock;
+			productReference = 0241106D4E560D690306B090C6856C7E /* InstantMock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE69B5840E1328C4BCFE468597C9E113 /* Pods-Kata-BerlinClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCB95986B44F3B92CDB668912A9423A0 /* Build configuration list for PBXNativeTarget "Pods-Kata-BerlinClock" */;
+			buildPhases = (
+				1A2DEAE2985C50E252A9CC2B631BF6BB /* Headers */,
+				7EBE45643B89ACF711258391224EA0DA /* Sources */,
+				45A1FAFEAC6FAECB7B8179562F78316F /* Frameworks */,
+				303581085E85682CA773229A72C81313 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Kata-BerlinClock";
+			productName = "Pods-Kata-BerlinClock";
+			productReference = 5148E8A20EE60741975D75A0496ECB98 /* Pods_Kata_BerlinClock.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 33C5B1BA429B3C56EB6015B6BC0C17F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E9EAE6FCA3E71D46CD3260C91A02F08 /* InstantMock */,
+				FE69B5840E1328C4BCFE468597C9E113 /* Pods-Kata-BerlinClock */,
+				47B60E3FDBCB4854601746D4155E523F /* Pods-Kata-BerlinClockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		050FEB480B5102C1B337E2B70D44684D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303581085E85682CA773229A72C81313 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF540E106F1D197DA8ED3FED9B39C448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EBE45643B89ACF711258391224EA0DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B99888E2BB38131F8C4D3CE6F020B0 /* Pods-Kata-BerlinClock-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCAA4054818D5AE5071B310779912FDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4936D5DA86931016FEB432D418FBAC5 /* Pods-Kata-BerlinClockTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA8CFFD1EBAD0A9CC7F7F0BD9AB60B40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34FDB41B1CF0F554CFEABA837A05174 /* Arg+Closure.swift in Sources */,
+				4E243E679F3AA9587A61A858B8E0E944 /* Arg.swift in Sources */,
+				2C0F68C154E0220C5F0D0388E85C92FC /* Argument.swift in Sources */,
+				FEFAD91280EA9AC4C51AB1A928A79518 /* ArgumentAny.swift in Sources */,
+				D73B5AD0A13D67382DDAB681CBB06B13 /* ArgumentCaptor.swift in Sources */,
+				0BCF9FABAFED3D8E8D4D1CBCD43D7A15 /* ArgumentCaptorValues.swift in Sources */,
+				C07FB66A33732CB50B81357074FF38DB /* ArgumentCapture.swift in Sources */,
+				3B28DD2A574080F2BB41565EA8AD39BD /* ArgumentClosure.swift in Sources */,
+				D8C2A1322BDB57B849A593BFB074BC00 /* ArgumentClosureCaptor+FiveArgs.swift in Sources */,
+				FC30C7ECEE70B07E6A55E94DE8A903C5 /* ArgumentClosureCaptor+FourArgs.swift in Sources */,
+				191B964B9DAC3DC940965E2B9E63B9D8 /* ArgumentClosureCaptor+NoArg.swift in Sources */,
+				87AD5E363C2DE540AD80D4FC1D7EC739 /* ArgumentClosureCaptor+OneArg.swift in Sources */,
+				170907ECDCB4D32D941D68EDE5DB5D5A /* ArgumentClosureCaptor+ThreeArgs.swift in Sources */,
+				767849B4C4A4BE39F870DA14A53A132D /* ArgumentClosureCaptor+TwoArgs.swift in Sources */,
+				7C83E716C0E3D4F11BFEFE4F3DEE8B1E /* ArgumentClosureCaptor.swift in Sources */,
+				535AA297AD46E7A0735155E1AEFEA4E5 /* ArgumentFactory.swift in Sources */,
+				9FF3AC8C8D2124C01E42AFAC6DD073C5 /* ArgumentsConfiguration.swift in Sources */,
+				F287D76B187436B4A2983AFC7BE8D09D /* ArgumentsMatcher.swift in Sources */,
+				E729DD6298BBF1ED83F764808E073F95 /* ArgumentStorage.swift in Sources */,
+				925F994EDF47EB47DB09868379349F28 /* ArgumentValue.swift in Sources */,
+				E27212042E291EBD2A0DC4FA1DB1342A /* ArgumentVerify.swift in Sources */,
+				A6B99ECD5552078A53355ED74A2D8D96 /* ArgumentVerifyMandatory.swift in Sources */,
+				1A41F4A15BDF67C9B67457FE07FE1DD7 /* ArgumentVerifyOptional.swift in Sources */,
+				33E6881AE8CC6EAFAC1308B73716E998 /* Array+MockUsable.swift in Sources */,
+				A556671906F628002C775FF7C9E3AEDA /* Assertion.swift in Sources */,
+				E9E60B9D992DAE0625E150CACF329603 /* Bool+MockUsable.swift in Sources */,
+				6AE218BA1CE75F58578440D68F708F7F /* CallConfiguration.swift in Sources */,
+				3C05AC56CEE4F17793D969E0D4C3D4B1 /* CallInterceptor.swift in Sources */,
+				E36365C5EFA885E283C7D738D61BC7DA /* CallInterceptorStorage.swift in Sources */,
+				A2C4A47BEE8919CE17D42DF1897583BD /* DefaultClosureHandler.swift in Sources */,
+				F6A7B336DC32E7F7F038F88DB8B7C47B /* DefaultValueHandler.swift in Sources */,
+				DC93E292E57B8D24AC9F5D26A0439D53 /* Dictionary+MockUsable.swift in Sources */,
+				F8278ECC98CBCF89D4B53290D9A770D7 /* Double+MockUsable.swift in Sources */,
+				96AFF4EECB5E51A74372A6DE5D18985B /* Expectation.swift in Sources */,
+				6D338F38780DE83B32F2EE37A301755C /* ExpectationFactory.swift in Sources */,
+				B84DD976C7AEADC6EC711DF8386DDC93 /* InstantMock-dummy.m in Sources */,
+				72115A8FE7F6B0245C0E17879D7CB81A /* Int+MockUsable.swift in Sources */,
+				F45D5C0A938A0CEC3BEF06A93438002B /* Mock.swift in Sources */,
+				945DCBBC73A301413456CB16406D9F6F /* MockUsable.swift in Sources */,
+				756832D869D038B70BFE342D60F57796 /* Property.swift in Sources */,
+				73C88BDA9E0FDA8D020ADEB262A468F3 /* Set+MockUsable.swift in Sources */,
+				7D0A042B0785C29E5A23C07CA31B6882 /* String+MockUsable.swift in Sources */,
+				E07F84D3C78A7C4154B8DD306981EDAF /* Stub.swift in Sources */,
+				700574D70603D4EAD3367B04383EA509 /* Verifier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB3940404BAEE1E5E83BBCA6EABE754A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = InstantMock;
+			target = 5E9EAE6FCA3E71D46CD3260C91A02F08 /* InstantMock */;
+			targetProxy = 22C2888F2538D39A4323F111900DA5CD /* PBXContainerItemProxy */;
+		};
+		DBD2F083B920176A2AB68D194CBC2990 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Kata-BerlinClock";
+			target = FE69B5840E1328C4BCFE468597C9E113 /* Pods-Kata-BerlinClock */;
+			targetProxy = 646B18FB1B794A36D7D3C98C9AA87073 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0603B504EEC9FCB35BD95413D85FE227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 832A68C6E082E985B1E9D24CC80F767F /* Pods-Kata-BerlinClock.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kata-BerlinClock/Pods-Kata-BerlinClock-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Kata-BerlinClock/Pods-Kata-BerlinClock.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0618D6196DC28169F8A706895F7BB428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C63F9B13B683AA4CF11640F3B64A38C5 /* InstantMock.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/InstantMock/InstantMock-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/InstantMock/InstantMock-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/InstantMock/InstantMock.modulemap";
+				PRODUCT_MODULE_NAME = InstantMock;
+				PRODUCT_NAME = InstantMock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		091F9196E436708032B7D518AFD70AE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0673BBE3F7F2E1CB4C2EC87FD703D4F9 /* Pods-Kata-BerlinClockTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kata-BerlinClockTests/Pods-Kata-BerlinClockTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Kata-BerlinClockTests/Pods-Kata-BerlinClockTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		430E7F6F99F1E64AB27CFA341983E2D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD75CA37FD585DBB07E2B1406C65E104 /* Pods-Kata-BerlinClockTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kata-BerlinClockTests/Pods-Kata-BerlinClockTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Kata-BerlinClockTests/Pods-Kata-BerlinClockTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		73AA96DC9393EE20419636AA8B73A62D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E3203EC8D534E73D48A3F7D1CC32DF4 /* Pods-Kata-BerlinClock.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Kata-BerlinClock/Pods-Kata-BerlinClock-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Kata-BerlinClock/Pods-Kata-BerlinClock.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A4FE949C80CCDB6D8B820D58672FE9E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C63F9B13B683AA4CF11640F3B64A38C5 /* InstantMock.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/InstantMock/InstantMock-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/InstantMock/InstantMock-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/InstantMock/InstantMock.modulemap";
+				PRODUCT_MODULE_NAME = InstantMock;
+				PRODUCT_NAME = InstantMock;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CA647ED8E0DCA8A31800D985CA72DA9 /* Build configuration list for PBXNativeTarget "Pods-Kata-BerlinClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				430E7F6F99F1E64AB27CFA341983E2D1 /* Debug */,
+				091F9196E436708032B7D518AFD70AE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6410F571BA8C1AEC6A19403F1B61B0B5 /* Debug */,
+				A27713CB74E99AF202AADC23200A32F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCB95986B44F3B92CDB668912A9423A0 /* Build configuration list for PBXNativeTarget "Pods-Kata-BerlinClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73AA96DC9393EE20419636AA8B73A62D /* Debug */,
+				0603B504EEC9FCB35BD95413D85FE227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9AF24453EBCB35C55E83E24B2276178 /* Build configuration list for PBXNativeTarget "InstantMock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0618D6196DC28169F8A706895F7BB428 /* Debug */,
+				A4FE949C80CCDB6D8B820D58672FE9E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

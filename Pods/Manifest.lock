@@ -1,0 +1,16 @@
+PODS:
+  - InstantMock (2.5.1)
+
+DEPENDENCIES:
+  - InstantMock
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - InstantMock
+
+SPEC CHECKSUMS:
+  InstantMock: db6a8a973f2dc4d85996930cc214078200083fb0
+
+PODFILE CHECKSUM: a34a9068f9d6dc1830d93e81892c15edb87874fd
+
+COCOAPODS: 1.7.2
