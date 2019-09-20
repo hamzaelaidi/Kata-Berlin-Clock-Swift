@@ -10,20 +10,21 @@ import Foundation
 
 class BerlinClock {
     
-    func startConvert(timeStr: String) -> String {
+    private var hourConverter: HourConverter!
+    private var minuteConverter: MinuteConverter!
+    private var secondConverter: SecondConverter!
+    
+    init(hourConverter: HourConverter, minuteConverter: MinuteConverter, secondConverter: SecondConverter) {
         
-        let splitTime = timeStr.components(separatedBy: ":")
-        
-        let hourConverter   = HourConverter(hour: Int(splitTime[0])!)
-        let minuteConverter = MinuteConverter(minute: Int(splitTime[1])!)
-        let secondConverter = SecondConverter(second: Int(splitTime[2])!)
-        
-        return convertToBerlinTime(ConvertedHour: hourConverter.convert(), convertedMinute: minuteConverter.convert(), convertedSecond: secondConverter.convert())
+        self.hourConverter   = hourConverter
+        self.minuteConverter = minuteConverter
+        self.secondConverter = secondConverter
     }
     
-    func convertToBerlinTime(ConvertedHour: String, convertedMinute: String, convertedSecond: String) -> String {
+    func convertToBerlinTime(timeStr: String) -> String {
+        let splitTime = timeStr.components(separatedBy: ":")
         
-        return "\(convertedSecond)\n\(ConvertedHour)\n\(convertedMinute)"
+        return "\(secondConverter.convert(second: Int(splitTime[2])!))\n\(hourConverter.convert(hour: Int(splitTime[0])!))\n\(minuteConverter.convert(minute: Int(splitTime[1])!))"
         
     }
     

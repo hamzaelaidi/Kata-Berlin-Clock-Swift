@@ -10,40 +10,64 @@ import XCTest
 import InstantMock
 @testable import Kata_BerlinClock
 
-
-protocol converterProtocol {
-    func convertHour() -> String
-    func convertMinute() -> String
-    func convertSecond() -> String
+// - MARK: Mocked class HourConverter
+class HourConverterMock: HourConverter, MockDelegate {
+    
+    private let mock = Mock()
+    
+    var it: Mock {
+        return mock
+    }
+    
+    override func convert(hour: Int) -> String {
+        return mock.call(Arg.eq(hour))!
+    }
 }
 
-class converterMock: Mock, converterProtocol {
-    func convertHour() -> String {
-        return super.call()!
+// - MARK: Mocked class HourConverter
+class MinuteConverterMock: MinuteConverter, MockDelegate {
+    
+    private let mock = Mock()
+    
+    var it: Mock {
+        return mock
     }
     
-    func convertMinute() -> String {
-        return super.call()!
+    override func convert(minute: Int) -> String {
+        return mock.call(Arg.eq(minute))!
     }
-    
-    func convertSecond() -> String {
-        return super.call()!
-    }
-    
 }
 
-// Tests
+// - MARK: Mocked class SecondConverter
+class SecondConverterMock: SecondConverter, MockDelegate {
+    
+    private let mock = Mock()
+    
+    var it: Mock {
+        return mock
+    }
+    
+    override func convert(second: Int) -> String {
+        return mock.call(Arg.eq(second))!
+    }
+}
+
+// - MARK: Tests
 class Kata_BerlinClockTests: XCTestCase {
     
+    let hourConvertermock = HourConverterMock()
+    let minuteConvertermock = MinuteConverterMock()
+    let secondConvertermock = SecondConverterMock()
+    
     func test_should_return_Y_OOOO_OOOO_OOOOOOOOOOO_OOOO_when_time_is_00_00_00() {
-        let berlinClock = BerlinClock()
         
-        let mock = converterMock()
-        mock.expect().call(mock.convertSecond()).andReturn("Y")
-        mock.expect().call(mock.convertHour()).andReturn("OOOO\nOOOO")
-        mock.expect().call(mock.convertMinute()).andReturn("OOOOOOOOOOO\nOOOO")
+        secondConvertermock.it.expect().call(secondConvertermock.convert(second: 0)).andReturn("Y")
+        hourConvertermock.it.expect().call(hourConvertermock.convert(hour: 0)).andReturn("OOOO\nOOOO")
+        minuteConvertermock.it.expect().call(minuteConvertermock.convert(minute: 0)).andReturn("OOOOOOOOOOO\nOOOO")
         
-        XCTAssertEqual(berlinClock.convertToBerlinTime(ConvertedHour: mock.convertHour(), convertedMinute: mock.convertMinute(), convertedSecond: mock.convertSecond()), "Y\nOOOO\nOOOO\nOOOOOOOOOOO\nOOOO")
+        let berlinClock = BerlinClock(hourConverter: hourConvertermock, minuteConverter: minuteConvertermock, secondConverter: secondConvertermock)
+        
+        XCTAssertEqual(berlinClock.convertToBerlinTime(timeStr: "00:00:00"), "Y\nOOOO\nOOOO\nOOOOOOOOOOO\nOOOO")
     }
 
 }

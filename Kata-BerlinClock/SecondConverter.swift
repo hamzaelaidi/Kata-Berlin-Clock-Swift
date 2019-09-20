@@ -10,13 +10,7 @@ import Foundation
 
 class SecondConverter {
     
-    private var second: Int!
-    
-    init(second: Int) {
-        self.second = second
-    }
-    
-    func convert() -> String {
+    func convert(second: Int) -> String {
         if second.isMultiple(of: 2) {
             return "Y"
         }

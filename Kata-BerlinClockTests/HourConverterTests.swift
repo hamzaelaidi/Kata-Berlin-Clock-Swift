@@ -11,14 +11,14 @@ import XCTest
 
 class HourConverterTests: XCTestCase {
 
+    let hourConverter = HourConverter()
+    
     func test_should_return_OOOO_OOOO_when_hour_is_00() {
-        let hourConverter = HourConverter(hour: 00)
-        XCTAssertEqual(hourConverter.convert(), "OOOO\nOOOO")
+        XCTAssertEqual(hourConverter.convert(hour: 00), "OOOO\nOOOO")
     }
     
     func test_should_return_OOOO_OOOO_when_hour_is_13() {
-        let hourConverter = HourConverter(hour: 13)
-        XCTAssertEqual(hourConverter.convert(), "RROO\nRRRO")
+        XCTAssertEqual(hourConverter.convert(hour: 13), "RROO\nRRRO")
     }
 
 }

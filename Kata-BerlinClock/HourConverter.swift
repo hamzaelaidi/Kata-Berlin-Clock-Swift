@@ -10,15 +10,13 @@ import Foundation
 
 class HourConverter {
     
-    private var hour : Int!
     private var timeIsOn : TimeIsOn?
     
-    init(hour: Int) {
-        self.hour = hour
+    init() {
         timeIsOn = TimeIsOn()
     }
     
-    func convert() -> String {
+    func convert(hour: Int) -> String {
         return "\(topHours(number: hour))\n\(bottomHours(number: hour))"
     }
     

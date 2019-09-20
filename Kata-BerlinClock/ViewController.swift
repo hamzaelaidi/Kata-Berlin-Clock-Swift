@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     }
 
     func berlinClockConverter() -> String{
-        let berlinClock = BerlinClock()
-        return berlinClock.startConvert(timeStr: "22:15:40")
+//        let berlinClock = BerlinClock(timeStr: "22:15:40")
+        return ""
     }
 
 }
