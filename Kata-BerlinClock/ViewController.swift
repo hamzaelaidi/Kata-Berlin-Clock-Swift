@@ -12,9 +12,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        print(berlinClockConverter())
     }
 
+    func berlinClockConverter() -> String{
+        let berlinClock = BerlinClock()
+        return berlinClock.startConvert(timeStr: "22:15:40")
+    }
 
 }
 

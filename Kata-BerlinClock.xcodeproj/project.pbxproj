@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -90,7 +90,6 @@
 				3081E2DA797BEEE92182BF1C /* Pods-Kata-BerlinClockTests.debug.xcconfig */,
 				7CA4F7F4ADBB78C98E94D5E8 /* Pods-Kata-BerlinClockTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

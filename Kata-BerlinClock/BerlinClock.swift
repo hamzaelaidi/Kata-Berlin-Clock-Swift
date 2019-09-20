@@ -10,28 +10,20 @@ import Foundation
 
 class BerlinClock {
     
-    enum CustomError: Error {
-        case validTimeException(String)
+    func startConvert(timeStr: String) -> String {
+        
+        let splitTime = timeStr.components(separatedBy: ":")
+        
+        let hourConverter   = HourConverter(hour: Int(splitTime[0])!)
+        let minuteConverter = MinuteConverter(minute: Int(splitTime[1])!)
+        let secondConverter = SecondConverter(second: Int(splitTime[2])!)
+        
+        return convertToBerlinTime(ConvertedHour: hourConverter.convert(), convertedMinute: minuteConverter.convert(), convertedSecond: secondConverter.convert())
     }
     
-    let formatter = DateFormatter()
-    let calendar = Calendar.current
-    
-    init() {
-        formatter.dateFormat = "HH:mm:ss"
-    }
-    
-    func convertToBerlinTime(timeStr: String) throws -> String {
+    func convertToBerlinTime(ConvertedHour: String, convertedMinute: String, convertedSecond: String) -> String {
         
-        guard let time = formatter.date(from: timeStr) else {
-            throw CustomError.validTimeException("Time is not in correct format")
-        }
-        
-        let hourConverter   = HourConverter(hour: calendar.component(.hour, from: time))
-        let minuteConverter = MinuteConverter(minute: calendar.component(.minute, from: time))
-        let secondConverter = SecondConverter(second: calendar.component(.second, from: time))
-        
-        return "\(secondConverter.convert())\n\(hourConverter.convert())\n\(minuteConverter.convert())"
+        return "\(convertedSecond)\n\(ConvertedHour)\n\(convertedMinute)"
         
     }
     
