@@ -69,5 +69,26 @@ class Kata_BerlinClockTests: XCTestCase {
         
         XCTAssertEqual(berlinClock.convertToBerlinTime(timeStr: "00:00:00"), "Y\nOOOO\nOOOO\nOOOOOOOOOOO\nOOOO")
     }
+    
+    func test_should_return_O_RROO_RRRO_YYROOOOOOOO_YYOO_when_time_is_13_17_01() {
+        
+        secondConvertermock.it.expect().call(secondConvertermock.convert(second: 1)).andReturn("O")
+        hourConvertermock.it.expect().call(hourConvertermock.convert(hour: 13)).andReturn("RROO\nRRRO")
+        minuteConvertermock.it.expect().call(minuteConvertermock.convert(minute: 17)).andReturn("YYROOOOOOOO\nYYOO")
+        
+        let berlinClock = BerlinClock(hourConverter: hourConvertermock, minuteConverter: minuteConvertermock, secondConverter: secondConvertermock)
+        
+        XCTAssertEqual(berlinClock.convertToBerlinTime(timeStr: "13:17:01"), "O\nRROO\nRRRO\nYYROOOOOOOO\nYYOO")
+    }
 
+    func test_should_return_O_RRRR_RRRO_YYRYYRYYRYY_YYYY_when_time_is_23_59_59() {
+        
+        secondConvertermock.it.expect().call(secondConvertermock.convert(second: 59)).andReturn("O")
+        hourConvertermock.it.expect().call(hourConvertermock.convert(hour: 23)).andReturn("RRRR\nRRRO")
+        minuteConvertermock.it.expect().call(minuteConvertermock.convert(minute: 59)).andReturn("YYRYYRYYRYY\nYYYY")
+        
+        let berlinClock = BerlinClock(hourConverter: hourConvertermock, minuteConverter: minuteConvertermock, secondConverter: secondConvertermock)
+        
+        XCTAssertEqual(berlinClock.convertToBerlinTime(timeStr: "23:59:59"), "O\nRRRR\nRRRO\nYYRYYRYYRYY\nYYYY")
+    }
 }
